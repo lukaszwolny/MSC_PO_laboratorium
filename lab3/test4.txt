@@ -1,0 +1,14 @@
+{
+    "A": 4.0,
+    "Baza": {
+        "A": 3.0,
+        "Baza": {
+            "Poziom": 10.0,
+            "Typ": "WartoscStalaGenerator"
+        },
+        "F": 0.05,
+        "Typ": "SinusGenerator"
+    },
+    "F": 0.05,
+    "Typ": "TrojkatGenerator"
+}
