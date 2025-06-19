@@ -18,18 +18,18 @@ public:
 	* @param u Wartosc sygnalu wejsciowego.
 	* @return Wynik symulacji.
 	*/
-	double symuluj(double u);
+	double symuluj(double u) override;
 
 
 	/**
 	* @brief Dodaje komponent potomny do listy.
 	* @param component Wskaznik do komponentu, ktory ma zostac dodany.
 	*/
-	void Add(Komponent *component);
+	void Add(Komponent *component) override;
 
 	/**
 	* @brief Usuwa komponent potomny z listy.
 	* @param component Wskaznik do komponentu, ktory ma zostac usuniety.
 	*/
-	void Remove(Komponent *component);
+	void Remove(Komponent *component) override;
 };
