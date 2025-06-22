@@ -1,0 +1,13 @@
+{
+    "A": 10.0,
+    "Baza": {
+        "A": 0.0,
+        "Baza": {
+            "Poziom": 5.0,
+            "Typ": "WartoscStalaGenerator"
+        },
+        "F": 0.05,
+        "Typ": "SinusGenerator"
+    },
+    "Typ": "OgranicznikAmplitudy"
+}
