@@ -70,17 +70,21 @@ double ModelARX::symulujZaklocenie() {
 void ModelARX::setA(const std::vector<double>& a) {
     A = a;
     //Rozmiar bufora
-    for (int i = 0; i < A.size(); i++) {
-        pamiecWyjscia.push_back(0.0);//rozmiar jako same zera.
-    }
+    // for (int i = 0; i < A.size(); i++) {
+    //     pamiecWyjscia.push_back(0.0);//rozmiar jako same zera.
+    // }
+    pamiecWyjscia.clear();
+    pamiecWyjscia.resize(A.size(), 0.0);
 }
 // wielomian B
 void ModelARX::setB(const std::vector<double>& b) {
     B = b;
     //Rozmiar bufora
-    for (int i = 0; i < B.size(); i++) {
-        pamiecWejscia.push_back(0.0);
-    }
+    // for (int i = 0; i < B.size(); i++) {
+    //     pamiecWejscia.push_back(0.0);
+    // }
+    pamiecWejscia.clear();
+    pamiecWejscia.resize(B.size(), 0.0);
 }
 // opoznienie transportowe (>=1)
 void ModelARX::setOpoznienieTransportowe(unsigned int opoznienie) {
@@ -91,9 +95,11 @@ void ModelARX::setOpoznienieTransportowe(unsigned int opoznienie) {
         opoznienieTransportowe = opoznienie;
     }
     //Rozmiar bufora
-    for (int i = 0; i < opoznienie; i++) {
-        pamiecOpoznienia.push_back(0.0);
-    }
+    // for (int i = 0; i < opoznienie; i++) {
+    //     pamiecOpoznienia.push_back(0.0);
+    // }
+    pamiecOpoznienia.clear();
+    pamiecOpoznienia.resize(opoznienieTransportowe, 0.0);
 }
 // odchylenie standardowege
 void ModelARX::setOdchylenieStandardowe(double odchylenie) {
